@@ -17,7 +17,7 @@ export default function PaymentGoalCard() {
       </div>
 
       {/* VISA Card */}
-      <div className="bg-[#1a7a4a] rounded-2xl p-4 text-white relative overflow-hidden">
+      <div className="bg-[#1a7a4a] rounded-2xl p-3 text-white relative overflow-hidden">
         {/* Círculos decorativos de fondo */}
         <div className="absolute -top-6 -right-6 w-28 h-28 rounded-full bg-white/5" />
         <div className="absolute -bottom-8 -right-2 w-36 h-36 rounded-full bg-white/5" />
@@ -25,7 +25,7 @@ export default function PaymentGoalCard() {
         {/* VISA + contactless */}
         <div className="flex items-center justify-between relative z-10">
           <span className="text-lg font-bold tracking-widest">VISA</span>
-          <svg viewBox="0 0 24 24" fill="none" className="w-6 h-6 opacity-80">
+          <svg viewBox="0 0 24 24" fill="none" className="w-6 h-6 opacity-80 scale-x-[-1]">
             <path d="M5 12.5c0-3.5 3-6 7-6" stroke="white" strokeWidth="1.8" strokeLinecap="round"/>
             <path d="M3 12.5c0-4.5 4-8 9-8" stroke="white" strokeWidth="1.8" strokeLinecap="round"/>
             <path d="M7 12.5c0-2 2-3.5 5-3.5" stroke="white" strokeWidth="1.8" strokeLinecap="round"/>
@@ -40,7 +40,7 @@ export default function PaymentGoalCard() {
         <p className="text-2xl font-semibold mt-1 relative z-10">$ 78,989.09</p>
 
         {/* Footer */}
-        <div className="flex items-center justify-between mt-4 relative z-10">
+        <div className="flex items-center justify-between mt-3 relative z-10">
           <span className="text-xs text-white/70 tracking-widest">•••• 909090</span>
           <span className="text-xs text-white/70">EXP 09/26</span>
         </div>

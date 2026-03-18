@@ -35,9 +35,9 @@ const payments = [
 
 export default function PaymentHistoryCard() {
   return (
-    <div className="bg-white rounded-[1.5rem] p-5 shadow-[0_1px_6px_rgba(0,0,0,0.06)]">
+    <div className="bg-white rounded-[1.5rem] p-4 shadow-[0_1px_6px_rgba(0,0,0,0.06)]">
       {/* Header */}
-      <div className="flex items-start justify-between mb-4">
+      <div className="flex items-start justify-between mb-2">
         <div>
           <p className="text-sm font-semibold text-[#1a1a2e]">Payment History</p>
           <p className="text-xs text-[#9ca3af] mt-0.5">Recent payments history</p>
@@ -60,15 +60,15 @@ export default function PaymentHistoryCard() {
       {/* Rows */}
       <div className="flex flex-col divide-y divide-[#f3f4f6]">
         {payments.map((p) => (
-          <div key={p.name} className="grid grid-cols-[2fr_1fr_1fr_1fr_1fr] gap-2 items-center py-3 px-1">
+          <div key={p.name} className="grid grid-cols-[2fr_1fr_1fr_1fr_1fr] gap-2 items-center py-2 px-1">
             {/* Name */}
             <div className="flex items-center gap-2">
-              <div className="w-8 h-8 rounded-full overflow-hidden flex-shrink-0 bg-[#f4f5f7]">
+              <div className="w-7 h-7 rounded-full overflow-hidden flex-shrink-0 bg-[#f4f5f7]">
                 <Image src={p.logo} alt={p.name} width={32} height={32} className="w-full h-full object-contain" />
               </div>
               <div>
                 <p className="text-xs font-semibold text-[#1a1a2e] leading-tight">{p.name}</p>
-                <p className="text-[10px] text-[#16a34a]">{p.change}</p>
+                <p className="text-[10px] text-[#14532d]">{p.change}</p>
               </div>
             </div>
             {/* Date */}

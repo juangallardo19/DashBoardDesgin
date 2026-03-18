@@ -43,7 +43,7 @@ export default function RightPaymentGoalCard() {
       </div>
 
       {/* Area chart */}
-      <div className="h-[110px] -mx-1">
+      <div className="h-[90px] -mx-1">
         <ResponsiveContainer width="100%" height="100%">
           <AreaChart data={data} margin={{ top: 4, right: 0, left: 0, bottom: 0 }}>
             <defs>
@@ -71,16 +71,19 @@ export default function RightPaymentGoalCard() {
         </ResponsiveContainer>
       </div>
 
-      {/* Send / Receive */}
-      <div className="flex items-center gap-3 mt-1">
-        <button className="flex items-center gap-1.5 bg-[#1a7a4a] text-white text-xs font-semibold px-4 py-2 rounded-full hover:bg-[#155f3a] transition-colors">
-          <ArrowUp className="w-3.5 h-3.5" />
-          Send
-        </button>
-        <button className="flex items-center gap-1.5 text-[#1a1a2e] text-xs font-semibold px-4 py-2 rounded-full border border-[#e5e7eb] hover:bg-[#f4f5f7] transition-colors">
-          <ArrowDown className="w-3.5 h-3.5" />
-          Receive
-        </button>
+      {/* Send / Receive — botón combinado centrado */}
+      <div className="flex justify-center mt-1">
+        <div className="flex items-center bg-[#f4f5f7] rounded-full overflow-hidden border border-[#e5e7eb]">
+          <button className="flex items-center gap-1.5 bg-[#1a7a4a] text-white text-xs font-semibold px-5 py-2.5 hover:bg-[#155f3a] transition-colors">
+            <ArrowUp className="w-3.5 h-3.5" />
+            Send
+          </button>
+          <div className="w-px h-5 bg-[#d1d5db]" />
+          <button className="flex items-center gap-1.5 text-[#1a1a2e] text-xs font-semibold px-5 py-2.5 hover:bg-[#e9eaec] transition-colors">
+            <ArrowDown className="w-3.5 h-3.5" />
+            Receive
+          </button>
+        </div>
       </div>
     </div>
   )

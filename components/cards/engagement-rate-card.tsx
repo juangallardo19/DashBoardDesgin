@@ -128,7 +128,8 @@ export default function EngagementRateCard() {
         <ResponsiveContainer width="100%" height="100%">
           <BarChart
             data={data}
-            barCategoryGap="18%"
+            barCategoryGap="28%"
+            maxBarSize={52}
             margin={{ top: 44, right: 4, left: -16, bottom: 0 }}
           >
             <CartesianGrid vertical={false} stroke="#e5e7eb" strokeDasharray="4 4" />
